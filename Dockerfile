@@ -25,10 +25,11 @@ RUN npm install -g --unsafe-perm ijavascript
 RUN ijsinstall
 
 COPY package.json "/home/${NB_USER}/work/package.json"
-COPY package-lock.json "/home/${NB_USER}/work/package-lock.json"
+# do not include package-lock for now, so we can avoid constantly updating with each new release
+#COPY package-lock.json "/home/${NB_USER}/work/package-lock.json"
 
 COPY img "/home/${NB_USER}/work/img"
-COPY example.ipynb "/home/${NB_USER}/work/"
+COPY *.ipynb "/home/${NB_USER}/work/"
 
 RUN chown -R "${NB_USER}" "/home/${NB_USER}/work"
 RUN chown -R "${NB_USER}" "/home/${NB_USER}/.local"
