@@ -26,7 +26,7 @@
   "dependencies": {
     "d3": "^6.7.0",
     "i18n-iso-countries": "^7.5.0",
-    "jupyter-ijavascript-utils": "^1.X.X",
+    "jupyter-ijavascript-utils": "^1.22.3",
     "node-fetch": "^2.6.7",
     "noisejs": "^2.1.0",
     "sane-topojson": "^4.0.0",
