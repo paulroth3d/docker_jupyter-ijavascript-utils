@@ -1,13 +1,13 @@
 {
   "name": "docker-jupyter-ijavascript-utils",
-  "version": "1.21.2",
+  "version": "1.21.5",
   "description": "Run Jupyter iJavaScript Utils from within Docker",
   "main": "index.js",
   "scripts": {
     "docker:remove": "docker image rm darkbluestudios/jupyter-ijavascript-utils",
     "docker:package": "npm run docker:package:arm && npm run docker:package:amd",
-    "docker:package:arm": "docker build -t darkbluestudios/jupyter-ijavascript-utils:arm_1.21.2 -t darkbluestudios/jupyter-ijavascript-utils:latest --platform linux/arm64/v8 .",
-    "docker:package:amd": "docker build -t darkbluestudios/jupyter-ijavascript-utils:amd_1.21.2 -t darkbluestudios/jupyter-ijavascript-utils:binder --platform linux/amd64 .",
+    "docker:package:arm": "docker build -t darkbluestudios/jupyter-ijavascript-utils:arm_1.21.5 -t darkbluestudios/jupyter-ijavascript-utils:latest --platform linux/arm64/v8 .",
+    "docker:package:amd": "docker build -t darkbluestudios/jupyter-ijavascript-utils:amd_1.21.5 -t darkbluestudios/jupyter-ijavascript-utils:binder_1.21.5 --platform linux/amd64 .",
     "docker:run": "docker run -it --rm -p 8888:8888 darkbluestudios/jupyter-ijavascript-utils:latest",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
