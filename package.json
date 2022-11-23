@@ -1,6 +1,6 @@
 {
   "name": "docker-jupyter-ijavascript-utils",
-  "version": "1.21.5",
+  "version": "1.0",
   "description": "Run Jupyter iJavaScript Utils from within Docker",
   "main": "index.js",
   "scripts": {

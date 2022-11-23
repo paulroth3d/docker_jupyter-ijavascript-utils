@@ -1,5 +1,6 @@
 #!/bin/bash
 
+unset ijsBuildVersion
 export ijsBuildVersion=1.22.0
 
 echo "will build new version:${ijsBuildVersion}"
