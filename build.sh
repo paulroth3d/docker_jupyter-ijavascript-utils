@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export ijsBuildVersion=1.21.6
+export ijsBuildVersion=1.22.0
 
 echo "will build new version:${ijsBuildVersion}"
 echo "should we proceed?"
