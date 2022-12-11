@@ -1,9 +1,6 @@
 #!/bin/bash
 
-unset ijsBuildVersion
-export ijsBuildVersion=1.22.3
-
-echo "have you already published the latest npm package?"
+echo "have you already published the latest npm package? (y/n)"
 
 read npmPublished
 
@@ -12,17 +9,19 @@ then
 	return 0
 fi
 
-echo "have you updated the package?"
+echo "updating the package.json file"
 
-read packageUpdated
+npm run npm:refresh
 
-if [ "${packageUpdated}" != "y" ];
-then
-	return 0
-fi
+echo "refresh the version"
+
+npm run package:version:set
+npm run package:version:get
+
+ijsBuildVersion="$(npm run package:version:get --silent)"
 
 echo "will build new version:${ijsBuildVersion}"
-echo "should we proceed?"
+echo "should we proceed? (y/n)"
 
 read shouldContinue
 
