@@ -29,6 +29,7 @@
   "dependencies": {
     "d3": "^7.9.0",
     "i18n-iso-countries": "^7.5.0",
+    "import-fresh": "^3.3.1",
     "jupyter-ijavascript-utils": "^1.63.0",
     "node-fetch": "^2.6.7",
     "noisejs": "^2.1.0",
