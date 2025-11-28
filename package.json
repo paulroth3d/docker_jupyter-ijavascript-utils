@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/paulroth3d/docker_jupyter-ijavascript-utils#readme",
   "dependencies": {
-    "d3": "^6.7.0",
+    "d3": "^7.9.0",
     "i18n-iso-countries": "^7.5.0",
     "jupyter-ijavascript-utils": "^1.63.0",
     "node-fetch": "^2.6.7",
