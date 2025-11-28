@@ -1,6 +1,6 @@
 {
   "name": "docker-jupyter-ijavascript-utils",
-  "version": "1.40.0",
+  "version": "1.63.0",
   "description": "Run Jupyter iJavaScript Utils from within Docker",
   "main": "index.js",
   "scripts": {
@@ -29,7 +29,7 @@
   "dependencies": {
     "d3": "^6.7.0",
     "i18n-iso-countries": "^7.5.0",
-    "jupyter-ijavascript-utils": "^1.40.0",
+    "jupyter-ijavascript-utils": "^1.63.0",
     "node-fetch": "^2.6.7",
     "noisejs": "^2.1.0",
     "sane-topojson": "^4.0.0",
